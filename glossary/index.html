@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html prefix="glossary: https://h2020-riskgone.github.io/nmbp13-terminology/index# rdfs: http://www.w3.org/2000/01/rdf-schema# rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# xsd: http://www.w3.org/2001/XMLSchema# obo: http://purl.obolibrary.org/obo/" lang="en">>
 
 <head>
-  <title>Gov4Nano, NanoRIGO, RiskGONE Glossary</title>
+  <title>NMBP-13 Glossary of Key Terms</title>
     <script src='js/respec.js' class='remove'></script>
     <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
     <script class='remove'>
@@ -70,20 +70,23 @@
   </section>
   <section class='informative'>
     <h2>Introduction</h2>
+    <p about="glossary:" typeof="owl:Ontology">
+      The <span property="rdfs:label">NMBP-13 Glossary of Key Terms</span> is developed by ...
+    </p>
     <p>
-      The Gov4Nano, NanoRIGO, RiskGONE glossary is developed by ...
+      This document is a HTML+RDFa document and the OWL ontology can be extracted with ... see https://www.w3.org/TR/rdfa-lite/
     </p>
   </section>
   <section class='normative'>
     <h2>The glossary</h2>
     <table>
       <tr>
-        <td><b>Term</b></td><td><b>Definition<b></td><td><b>Ontology IRI<b></td>
+        <td><b>Term</b></td><td><b>Definition<b></td><td><b>Superclass IRI<b></td>
       </tr>
-      <tr>
-        <td>Database</td>
-        <td>A digital data archive typically based around a relational model but sometimes using an object-oriented,key-value,  tree or graph-based model.</td>
-        <td><a href="http://edamontology.org/data_0581">EDAM:data_0581</a></td>
+      <tr about="glossary:Database" typeof="owl:Class">
+        <td property="rdfs:label">Database</td>
+        <td property="obo:IAO_0000115">A digital data archive typically based around a relational model but sometimes using an object-oriented,key-value,  tree or graph-based model.</td>
+        <td><a property="owl:subClassOf" href="http://semanticscience.org/resource/SIO_000750">SIO_000750 ("database")</a></td>
       </tr>
       <tr>
         <td>xxx</td>
