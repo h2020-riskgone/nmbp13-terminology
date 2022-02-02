@@ -2,7 +2,7 @@
 <html prefix="glossary: https://h2020-riskgone.github.io/nmbp13-terminology/glossary/index# rdfs: http://www.w3.org/2000/01/rdf-schema# rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# xsd: http://www.w3.org/2001/XMLSchema# obo: http://purl.obolibrary.org/obo/" lang="en">>
 
 <head>
-  <title>NMBP-13 Glossary of Key Terms</title>
+  <title>Joint glossary of key terms related to data management and knowledge infrastructure / portal / platform</title>
     <script src='js/respec.js' class='remove'></script>
     <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
     <script class='remove'>
@@ -12,7 +12,7 @@
           orgicon:              "<img height='100' src='https://www.gov4nano.eu/wp-content/uploads/2019/02/Gov4Nano.png' alt='Gov4nano'/> <img height='150' src='https://nanorigo.eu/wp-content/uploads/2019/01/color_version.png' alt='NANORIGO'/> <img height='100' src='https://www.gov4nano.eu/wp-content/uploads/2020/06/RISKGONE_Logo.png' alt='RiskGONE'/>",
           customorg:            "NMBP-13 Data Core Group",
           customcss:            "../css/enm.css",
-          overrideCopyright:    "<p class='copyright'>This document is licensed under a <a class='subfoot' href='http://creativecommons.org/licenses/by-sa/4.0/' rel='license'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>",
+          overrideCopyright:    "<p class='copyright'>Confidential.</p>",
           specStatus:           "WD",
           shortName:            "glossary",
           publishDate:   "2021-05-30",
@@ -38,15 +38,11 @@
              { name: "Evert Bouman",
                 company: "NILU", companyURL: "" },
              { name: "Damjana Drobna",
-                company: "", companyURL: "" },
+                company: "UniLj", companyURL: "" },
              { name: "Nina Jeliazkova",
                 company: "IdeaConsult", companyURL: "" },
              { name: "Laurent Winckers",
                 company: "Maastricht University", companyURL: "https://www.maastrichtuniversity.nl/" },
-             { name: "",
-                company: "", companyURL: "" },
-             { name: "",
-                company: "", companyURL: "" },
           ],
           
           // WG
@@ -71,10 +67,48 @@
   <section class='informative'>
     <h2>Introduction</h2>
     <p about="glossary:" typeof="owl:Ontology">
-      The <span property="rdfs:label">NMBP-13 Glossary of Key Terms</span> is developed by ...
+      The <span property="rdfs:label">Joint glossary of key terms related to data management and knowledge infrastructure / portal / platform</span> summarises the activities of the Core Group on Data Management organized jointly by the three projects funded under the H2020 NMBP-13 call: Gov4Nano, NANORIGO and RiskGONE. These activities reported here took place during the period January-June 2020 as part of the ongoing activities of the data management core group, and is one of the two parallel activities that this core group focussed on over this period (the other activity will be reported separately in Joint Milestone (JM) 2 on prioritisation of databases to be made interoperable).
     </p>
     <p>
-      This document is a HTML+RDFa document and the OWL ontology can be extracted with ... see https://www.w3.org/TR/rdfa-lite/
+      A key stumbling block to within and across-project collaboration is unintentional or unacknowledged differences in understanding of the meaning of key terminology, which can arise due to language barriers or as a result of slight disciplinary differences.  Formal ontologies, such as eNanoMapper ontology1 can help here, as these are directed towards harmonisation and organisation of dataset as well as supporting day-to-day use of terms.  Similarly, standardisation organisations such as ISO have definitions for a lot of terminology related to nanotechnologies and nanomaterials2, and consistent use of this is essential, but not always applied in practice.
+    </p>
+    <p>
+      To overcome the challenge of consistent use of terminology, several projects have established a glossary of terms for use within the project.  For example, the FP7 NanoREG project developed and published the 'NANoREG Harmonised Terminology', aligned as far as possible with already existing definition text(s), thus avoiding the creation of new and unwelcome information. 1  The list includes terms with international regulatory relevance, such as those defined at OECD level, as well as terms that have a specific meaning and use under REACH legislation2.
+    </p>
+    <p>
+      In order to support collaboration and consensus across the three NMPB-13 projects, and to facilitate the work of the 4 “Core Groups” spanning the Risk Governance Council and Framework, the Nano-Risk Governance Portal – Tools and Instruments, Stakeholder Involvement and ourselves as the Data Management Core group, it was agreed that we would establish a cross-project Glossary of terms to provide clarity on several important issues, including:
+      <ul>
+        <li>What we mean by toxicology, hazard, exposure etc. building on existing glossaries1;</li>
+        <li>Differences between the range of data management solutions including databases, data warehouses, data stores etc.;</li>
+        <li>Introduce new terms where needed such as cloud-platform, cloud-based solution as intended within these projects as a means to support the Nano Risk Governance Council;</li>
+        <li>New modelling approaches and terminologies related to approaches such as adverse outcome pathways1 and safe-by-design, as examples of emerging areas of growth.</li>
+      </ul>
+    </p>
+  </section>
+  <section class='informative'>
+    <h2>Methodology</h2>
+    <p>
+      Based on experience from previous projects, the data management core group agreed that an excel-based system with a sheet per Core group would be a good starting point.  This document has been established in the Teams folder for the Core Groups, and each core group is free to add terms to it.
+    </p>
+    <p>
+      As part of the Data Management Core group activity, we identified existing ontologies or relevant glossaries that had defined key terms already, in order to avoid unnecessary duplication of effort.  For example, the EDAM ontology1 for Bioinformatics operations, types of data, data identifiers, data formats, and topics was identified as a potential source of existing definitions for data management terms such as data warehousing, data stewardship and governance etc.
+    </p>
+    <p>
+      In addition to the aforementioned NanoREG Harmonised terminology, we have also aligned with the efforts in the H2020 GRACIOUS project, who have established a Wiki approach to support harmonisation of terminology for IATA, grouping and read-across1.  This effort builds upon activities from the H2020 project NanoCommons and others.
+    </p>
+    <p>
+      In June 2020, as part of a growing awareness that there are a multitude of ontology activities going on independently across the NanoSafety Cluster, NanoCommons suggested the implementation of a Task Force to integrate the efforts and align them, and address the issues with the structure of eNanoMapper ontology that had driven GRACIOUS, the US NIKC and other projects to develop their own glossaries and approaches separately.  The Core Data Management Group will play a central role in this activity and will support the integration of the harmonised terminology from the Core Groups into the revised eNanoMapper ontology.
+    </p>
+  </section>
+  <section class='informative'>
+    <h2>XXXX</h2>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+    <p>
     </p>
   </section>
   <section class='normative'>
@@ -95,10 +129,18 @@
       </tr>
     </table>
   </section>
+  
+  <section class='informative'>
+    <h2>Acknowledgments</h2>
+    <p>
+      We thank the reviewers Janeck James Scott-Fordsmand, Monique Groenewold, and Maria Dusinska.
+    </p>
+  </section>
+
   <section class='informative'>
     <h2>Funding</h2>
     <p>
-      This work received funding from the European Union’s Horizon 2020 research and innovation programme via NanoRIGO Project under grant agreement No 814530, RiskGONE Project under grant agreement No 814425, and via Gov4Nano under grant agreement No 814401.
+      This work received funding from the European Union’s Horizon 2020 research and innovation programme via <a href="https://nanorigo.eu/">NanoRIGO</a> Project under grant agreement No 814530, <a href="https://riskgone.eu/">RiskGONE</a> Project under grant agreement No 814425, and via <a href="https://www.gov4nano.eu/">Gov4Nano</a> under grant agreement No 814401.
     </p>
   </section>
 </body>
