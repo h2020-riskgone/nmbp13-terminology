@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html prefix="glossary: https://h2020-riskgone.github.io/nmbp13-terminology/glossary/index# rdfs: http://www.w3.org/2000/01/rdf-schema# rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# xsd: http://www.w3.org/2001/XMLSchema# obo: http://purl.obolibrary.org/obo/" lang="en">
+
+<head>
+  <title>Joint glossary of key terms related to data management and knowledge infrastructure / portal / platform</title>
+    <script src='js/respec.js' class='remove'></script>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+    <script class='remove'>
+      var respecConfig = {
+          // document info
+          orguri:               "https://h2020-riskgone.github.io/nmbp13-terminology/",
+          orgicon:              "<img width='27%' src='https://www.gov4nano.eu/wp-content/uploads/2019/02/Gov4Nano.png' alt='Gov4nano'/> <img width='27%' src='https://nanorigo.eu/wp-content/uploads/2019/01/color_version.png' alt='NANORIGO'/> <img width='27%' src='https://www.gov4nano.eu/wp-content/uploads/2020/06/RISKGONE_Logo.png' alt='RiskGONE'/>",
+          customorg:            "NMBP-13 Data Core Group",
+          customcss:            "css/enm.css",
+          overrideCopyright:    "<p class='copyright'>Confidential.</p>",
+          specStatus:           "WD",
+          shortName:            "glossary",
+          publishDate:   "2021-05-30",
+          previousMaturity: "WD",
+          //previousPublishDate:  "2020-05-17",
+          // previousURI : "http://dev.w3.org/2009/dap/ReSpec.js/documentation.html",
+          copyrightStart:       "2020",
+          edDraftURI:           "https://h2020-riskgone.github.io/nmbp13-terminology/glossary/",
+          // lcEnd:  "2010-08-06",
+          // extraCSS:             ["css/respec.css"],
+          // extraCSS:             ["http://dev.w3.org/2009/dap/ReSpec.js/css/respec.css"],
+
+          // editors (optional)
+          editors:  [
+             { name: "Iseult Lynch", url: "https://orcid.org/0000-0003-4250-4584",
+                company: "University of Birmingham", companyURL: "https://www.birmingham.ac.uk/" },
+          ],
+          authors:  [
+             { name: "Antreas Afantitis",
+                company: "NovaMechanics", companyURL: "https://novamechanics.com/" },
+             { name: "Martine Bakker",
+                company: "RIVM", companyURL: "https://www.rivm.nl/" },
+             { name: "Evert Bouman",
+                company: "NILU", companyURL: "https://www.nilu.com/" },
+             { name: "Damjana Drobna",
+                company: "UniLj", companyURL: "https://www.uni-lj.si/" },
+             { name: "Nina Jeliazkova",
+                company: "IdeaConsult", companyURL: "https://www.ideaconsult.net/" },
+             { name: "Laurent Winckers",
+                company: "Maastricht University", companyURL: "https://www.maastrichtuniversity.nl/" },
+             { name: "Egon Willighagen", url: "https://orcid.org/0000-0001-7542-0286",
+                company: "Maastricht University", companyURL: "https://www.maastrichtuniversity.nl/" },
+          ],
+          
+          // WG
+          //wg:           "People Who Like To Write Specs Help Group",
+          //wgURI:        "http://berjon.com/",
+          //wgPublicList: "spec-writers-anonymous",
+          //wgPatentURI:  "",
+      };
+    </script>
+</head>
+
+<body>
+  <section id="sotd">
+    <h4>Intended audience</h4>
+    <p>
+      This document is aimed at everyone working in the Gov4Nano, NanoRIGO, RiskGONE projects.
+    </p>
+  </section>
+  <section id="abstract">
+    <p about="glossary:" typeof="owl:Ontology">
+      The <span property="rdfs:label">Joint glossary of key terms related to data management and knowledge infrastructure / portal / platform</span> summarises the activities of the Core Group on Data Management organized jointly by the three projects funded under the H2020 NMBP-13 call: Gov4Nano, NANORIGO and RiskGONE. These activities reported here took place during the period January-June 2020 as part of the ongoing activities of the data management core group, and is one of the two parallel activities that this core group focussed on over this period (the other activity will be reported separately in Joint Milestone (JM) 2 on prioritisation of databases to be made interoperable).
+    </p>
+  </section>
+  <section class='informative'>
+    <h2>Introduction</h2>
+    <p>
+      A key stumbling block to within and across-project collaboration is unintentional or unacknowledged differences in understanding of the meaning of key terminology, which can arise due to language barriers or as a result of slight disciplinary differences.  Formal ontologies, such as <a href="https://enanomapper.net/ontology">eNanoMapper ontology</a> can help here, as these are directed towards harmonisation and organisation of dataset as well as supporting day-to-day use of terms.  Similarly, standardisation organisations such as <a href="https://www.iso.org/obp/ui/#iso:std:iso:tr:18401:ed-1:v1:en ">ISO have definitions</a> for a lot of terminology related to nanotechnologies and nanomaterials, and consistent use of this is essential, but not always applied in practice.
+    </p>
+    <p>
+      To overcome the challenge of consistent use of terminology, several projects have established a glossary of terms for use within the project.  For example, the FP7 NanoREG project developed and published the 'NANoREG Harmonised Terminology', aligned as far as possible with already <a href="https://ec.europa.eu/jrc/en/publication/nanoreg-harmonised-terminology-environmental-health-and-safety-assessment-nanomaterials ">existing definition text(s)</a>, thus avoiding the creation of new and unwelcome information.  The list includes terms with international regulatory relevance, such as those defined at OECD level, as well as terms that have a specific meaning and use under <a href="https://echa.europa.eu/regulations/reach/legislation ">REACH legislation</a>.
+    </p>
+    <p>
+      In order to support collaboration and consensus across the three NMPB-13 projects, and to facilitate the work of the 4 “Core Groups” spanning the Risk Governance Council and Framework, the Nano-Risk Governance Portal – Tools and Instruments, Stakeholder Involvement and ourselves as the Data Management Core group, it was agreed that we would establish a cross-project Glossary of terms to provide clarity on several important issues, including:
+      <ul>
+        <li>What we mean by toxicology, hazard, exposure etc. building on existing glossaries [[Duffus2017]];</li>
+        <li>Differences between the range of data management solutions including databases, data warehouses, data stores etc.;</li>
+        <li>Introduce new terms where needed such as cloud-platform, cloud-based solution as intended within these projects as a means to support the Nano Risk Governance Council;</li>
+        <li>New modelling approaches and terminologies related to approaches such as <a href="https://github.com/DataSciBurgoon/aop-ontology ">adverse outcome pathways</a> and safe-by-design, as examples of emerging areas of growth.</li>
+      </ul>
+    </p>
+  </section>
+  <section class='informative'>
+    <h2>Methodology</h2>
+    <p>
+      Based on experience from previous projects, the data management core group agreed that an excel-based system with a sheet per Core group would be a good starting point.  This document has been established in the Teams folder for the Core Groups, and each core group is free to add terms to it.
+    </p>
+    <p>
+      As part of the Data Management Core group activity, we identified existing ontologies or relevant glossaries that had defined key terms already, in order to avoid unnecessary duplication of effort.  For example, the <a href="http://edamontology.org/page">EDAM ontology</a> for Bioinformatics operations, types of data, data identifiers, data formats, and topics was identified as a potential source of existing definitions for data management terms such as data warehousing, data stewardship and governance etc.
+    </p>
+    <p>
+      In addition to the aforementioned NanoREG Harmonised terminology, we have also aligned with the efforts in the H2020 GRACIOUS project, who have established <a href="https://www.h2020gracious.eu/library/online-wiki ">a Wiki approach</a> to support harmonisation of terminology for IATA, grouping and read-across.  This effort builds upon activities from the H2020 project NanoCommons and others.
+    </p>
+    <p>
+      In June 2020, as part of a growing awareness that there are a multitude of ontology activities going on independently across the NanoSafety Cluster, NanoCommons suggested the implementation of a Task Force to integrate the efforts and align them, and address the issues with the structure of eNanoMapper ontology that had driven GRACIOUS, the US NIKC and other projects to develop their own glossaries and approaches separately.  The Core Data Management Group will play a central role in this activity and will support the integration of the harmonised terminology from the Core Groups into the revised eNanoMapper ontology.
+    </p>
+  </section>
+  <section class='informative'>
+    <h2>Outcomes</h2>
+    <p>
+      The NMBP-13 projects Glossary of Terms is Living document, that will continue to be updated and evolved by the Core groups, the WPs and the partners, with the final goal of integration of the terms into the revised and extended eNanoMapper-NanoCommons ontology.
+    </p>
+    <p>
+      The <a href="https://teams.microsoft.com/l/file/3ED241DB-E3D8-4698-AB6E-112E691A95A4?tenantId=220534bf-8803-473e-b063-923d72bcef2a&fileType=xlsx&objectUrl=https%3A%2F%2Fnilu365.sharepoint.com%2Fsites%2FProject-NMBP13%2FShared%20Documents%2FGeneral%2FGlossary%20of%20key%20terms%2FGlossary%20of%20key%20terms.xlsx&baseUrl=https%3A%2F%2Fnilu365.sharepoint.com%2Fsites%2FProject-NMBP13&serviceName=teams&threadId=19:0d9c5a650fe643f2ab02f7d01959b320@thread.skype&groupId=59d85f53-db67-4347-82cd-bd09db845ca2">Excel-based Glossary</a> is available and was shared with the other Core Groups at the joint meeting on 18th May 2020.  To start off the process of filling it, the Data management core group pre-filled examples of general terms relating to each of the cores, and key terms that had been identified by NanoRIGO’s work on database harmonisation which identified toxicology, hazard and several other terms as being potentially mis-used or mis-interpreted.  Links to existing ontology terms and definitions are also included, as well as link to key references and resources, such as the Harmonised Glossary of Terms for Toxicology, the JRC Harmonised terms etc.
+    </p>
+    <p>
+      This spreadsheet is converted into the below "The glossary" section.
+    </p>
+    <p>
+      Figure 1 shows a screen shot of the data management core group initial terms, their definitions and the link to the existing ontology term.
+    </p>
+    <p>
+      <img src="figure1.png" width="50%"></img><br />
+      <b>Figure 1</b>:  Screenshot of the initial Data management core group Glossary of terms, including the link to the existing Ontology term. 
+    </p>
+  </section>
+  <section class='informative'>
+    <h2>How to extend the Glossary</h2>
+    <p>
+      Core groups are initially invited to add their terms, and then the data management core group will identify the relevant ontology term, and confirm that the associated definition meets the needs of the Core group.  
+    </p>
+    <p>
+      WP leaders from across the 3 projects will then be invited to access the Glossary also to check for terms in their day-to-day activities and to add additional terms as needed.  The goal is not to add every single term, but to focus on those terms where there is potential for confusion / mis-use or misunderstanding as to the specific meaning of the term in the specific project context.
+    </p>
+  </section>
+  <section class='informative'>
+    <h2>How to use the Glossary</h2>
+    <p>
+      The Glossary supports harmonisation of terminology to aid discussions within and between the Core Groups. In addition, harmonisation of terminology results in a better understanding of the content which is talked and discussed about. This better understanding of the semantics within the project trickles down to ensure <b>consistent and harmonised deliverable reports and project outputs</b> and improves their overall quality. A key step in the internal review of all deliverables will be cross-checking them for consistency with the terminology from the glossary – this can be easily achieved through addition of the key terms and their definitions alongside the list of abbreviations in all deliverable reports.
+    </p>
+    <p>
+      While it was decided that the Glossary would be Excel-based, the associated ontologies will be used for harmonised annotation of project datasets, both literature curated and generated within the projects.
+    </p>
+    <p>
+      Furthermore, semantics, ontologies and glossaries will be used consistently by the 3 projects as these tools aid individuals, the team and the projects.  This approach will be useful outside the field of toxicology as well. Whereas we see a surge in the use of semantics, applying these methodologies should be implemented more often to make more people familiar with the concepts.  Therewithal, the use of the Glossary showed to be beneficial to support collaboration and consensus across the three NMPB-13 projects.
+    </p>
+  </section>
+  <section class='informative'>
+    <h2>The glossary</h2>
+    <p>
+      This document does not replace the Excel spreadsheet glossary, but just a translation of it. The <a href="https://teams.microsoft.com/l/file/3ED241DB-E3D8-4698-AB6E-112E691A95A4?tenantId=220534bf-8803-473e-b063-923d72bcef2a&fileType=xlsx&objectUrl=https%3A%2F%2Fnilu365.sharepoint.com%2Fsites%2FProject-NMBP13%2FShared%20Documents%2FGeneral%2FGlossary%20of%20key%20terms%2FGlossary%20of%20key%20terms.xlsx&baseUrl=https%3A%2F%2Fnilu365.sharepoint.com%2Fsites%2FProject-NMBP13&serviceName=teams&threadId=19:0d9c5a650fe643f2ab02f7d01959b320@thread.skype&groupId=59d85f53-db67-4347-82cd-bd09db845ca2">Excel spreadsheet</a> is normative and this document informative.
+    </p>
+    <h3>Data Management terms</h3>
+    <table width="80%">
+      <tr>
+        <td><b>Term</b></td><td><b>Definition</b></td><td><b>Superclass IRI</b></td>
+      </tr>
+      <tr about="glossary:Annotation" typeof="owl:Class">
+        <td property="rdfs:label">Annotation</td>
+        <td property="obo:IAO_0000115">This is a broad data type and is used a placeholder for other, more specific types. A human-readable collection of information which (typically) is generated or collated by hand and which describes a biological entity, phenomena or associated primary (e.g. sequence or structural) data, as distinct from the primary data itself and computer-generated reports derived from it.</td>
+        <td><a property="owl:subClassOf" href=""></a></td>
+      </tr>
+      <tr about="glossary:Anonymisation" typeof="owl:Class">
+        <td property="rdfs:label">Anonymisation</td>
+        <td property="obo:IAO_0000115">Process data in such a way that makes it hard to trace to the person which the data concerns.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/operation_3283">operation_3283</a></td>
+      </tr>
+      <tr about="glossary:Classification" typeof="owl:Class">
+        <td property="rdfs:label">Classification</td>
+        <td property="obo:IAO_0000115">Topic focused on identifying, grouping, or naming things in a structured way according to some schema based on observable relationships.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/topic_2230">topic_2230</a></td>
+      </tr>
+      <tr about="glossary:Cloud" typeof="owl:Class">
+        <td property="rdfs:label">Cloud</td>
+        <td property="obo:IAO_0000115">Server or network of servers, accessed remotely.</td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Cloud_computing" typeof="owl:Class">
+        <td property="rdfs:label">Cloud computing</td>
+        <td property="obo:IAO_0000115">Storing and processing data on multiple servers that can be accessed through the Internet.</td>
+        <td><a property="owl:subClassOf" href="http://purl.bioontology.org/ontology/MESH/D000067917">D000067917</a></td>
+      </tr>
+      <tr about="glossary:Core_data" typeof="owl:Class">
+        <td property="rdfs:label">Core data</td>
+        <td property="obo:IAO_0000115">A type of data that (typically) corresponds to entries from the primary biological databases and which is (typically) the primary input or output of a tool, i.e. the data the tool processes or generates, as distinct from metadata and identifiers which describe and identify such core data, parameters that control the behaviour of tools, reports of derivative data generated by tools and annotation. Core data entities typically have a format and may be identified by an accession number.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/data_3031">data_3031</a></td>
+      </tr>
+      <tr about="glossary:Data_handling" typeof="owl:Class">
+        <td property="rdfs:label">Data handling</td>
+        <td property="obo:IAO_0000115">Basic (non-analytical) operations of some data, either a file or equivalent entity in memory, such that the same basic type of data is consumed as input and generated as output.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/operation_2409"></a></td>
+      </tr>
+      <tr about="glossary:Data_reference" typeof="owl:Class">
+        <td property="rdfs:label">Data reference</td>
+        <td property="obo:IAO_0000115">Reference to a dataset (or a cross-reference between two datasets), typically one or more entries in a biological database or ontology. A list of database accessions or identifiers are usually included.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/data_2093">data_2093</a></td>
+      </tr>
+      <tr about="glossary:Database" typeof="owl:Class">
+        <td property="rdfs:label">Database</td>
+        <td property="obo:IAO_0000115">A digital data archive typically based around a relational model but sometimes using an object-oriented,key-value,  tree or graph-based model.</td>
+        <td><a property="owl:subClassOf" href="http://semanticscience.org/resource/SIO_000750">SIO_000750</a> ("database")</td>
+      </tr>
+      <tr about="glossary:Databank" typeof="owl:Class">
+        <td property="rdfs:label">Databank</td>
+        <td property="obo:IAO_0000115">A flat-file (textual) data archive.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/data_2831">data_2831</a></td>
+      </tr>
+      <tr about="glossary:Database_cross_mapping" typeof="owl:Class">
+        <td property="rdfs:label">Database cross-mapping</td>
+        <td property="obo:IAO_0000115">The cross-mapping is typically a table where each row is an accession number and each column is a database being cross-referenced. The cells give the accession number or identifier of the corresponding entry in a database. If a cell in the table is not filled then no mapping could be found for the database. Additional information might be given on version, date etc. A mapping of the accession numbers (or other database identifier) of entries between (typically) two biological or biomedical databases.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/data_0954">data_0954</a></td>
+      </tr>
+      <tr about="glossary:Format" typeof="owl:Class">
+        <td property="rdfs:label">Format</td>
+        <td property="obo:IAO_0000115">A defined way or layout of representing and structuring data in a computer file, blob, string, message, or elsewhere. The main focus in EDAM lies on formats as means of structuring data exchanged between different tools or resources. The serialisation, compression, or encoding of concrete data formats/models is not in scope of EDAM. Format 'is format of' Data.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/format_1915">format_1915</a></td>
+      </tr>
+      <tr about="glossary:Framework" typeof="owl:Class">
+        <td property="rdfs:label">Framework</td>
+        <td property="obo:IAO_0000115">A set of elements (e.g. ideas, best practices, regulatory provisions) organised in a conceptual manner, which constitute a frame of reference for a certain topic or issue.</td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Harmonisation" typeof="owl:Class">
+        <td property="rdfs:label">Harmonisation</td>
+        <td property="obo:IAO_0000115">The term 'harmonisation' can be defined as the establishment of a common and coherent basis in a certain field/activity or for a certain scope.</td>
+        <td></td>
+      </tr>
+      <tr about="glossary:ID_list" typeof="owl:Class">
+        <td property="rdfs:label">ID list</td>
+        <td property="obo:IAO_0000115">A simple list of data identifiers (such as database accessions), possibly with additional basic information on the addressed data.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/data_2872">data_2872</a></td>
+      </tr>
+      <tr about="glossary:Identifier" typeof="owl:Class">
+        <td property="rdfs:label">Identifier</td>
+        <td property="obo:IAO_0000115">A text token, number or something else which identifies an entity, but which may not be persistent (stable) or unique (the same identifier may identify multiple things).</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/data_0842">data_0842</a></td>
+      </tr>
+      <tr about="glossary:Identifier_with_metadata" typeof="owl:Class">
+        <td property="rdfs:label">Identifier with metadata</td>
+        <td property="obo:IAO_0000115">Basic information concerning an identifier of data (typically including the identifier itself). For example, a gene symbol with information concerning its provenance.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/data_2767">data_2767</a></td>
+      </tr>
+      <tr about="glossary:Model" typeof="owl:Class">
+        <td property="rdfs:label">Model</td>
+        <td property="obo:IAO_0000115">A mathematical model is the use of mathematical language to describe the behaviour of a system. A mathematical model usually describes a system by a set of variables and a set of equations that establish relationships between the variables. The variables represent some properties of the system, for example, measured system outputs often in the form of signals, timing data, counters, event occurrence (yes/no). The actual model is the set of functions that describe the relations between the different variables. [source: WordIQ online dictionary]</td>
+        <td><a property="owl:subClassOf" href="http://purl.org/obo/owl/SBO#SBO_0000004">SBO_0000004</a></td>
+      </tr>
+      <tr about="glossary:Ontology" typeof="owl:Class">
+        <td property="rdfs:label">Ontology</td>
+        <td property="obo:IAO_0000115">An ontology of biological or bioinformatics concepts and relations, a controlled vocabulary, structured glossary etc.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/data_0582">data_0582</a></td>
+      </tr>
+      <tr about="glossary:Parsing" typeof="owl:Class">
+        <td property="rdfs:label">Parsing</td>
+        <td property="obo:IAO_0000115">Parse, prepare or load a user-specified data file so that it is available for use.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/operation_1812">operation_1812</a></td>
+      </tr>
+      <tr about="glossary:Platform" typeof="owl:Class">
+        <td property="rdfs:label">Platform</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Portal" typeof="owl:Class">
+        <td property="rdfs:label">Portal</td>
+        <td property="obo:IAO_0000115">A Resource that provides a point of access to information on the World Wide Web, presenting information from diverse sources in a unified way.</td>
+        <td><a property="owl:subClassOf" href="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Portal">Portal</a></td>
+      </tr>
+      <tr about="glossary:Software" typeof="owl:Class">
+        <td property="rdfs:label">Software</td>
+        <td property="obo:IAO_0000115">A set of coded instructions, which a computer follows in processing data, performing an operation, or solving a logical problem, upon execution of the program.</td>
+        <td><a property="owl:subClassOf" href="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17146">C17146</a></td>
+      </tr>
+      <tr about="glossary:Tool" typeof="owl:Class">
+        <td property="rdfs:label">Tool</td>
+        <td property="obo:IAO_0000115">A bioinformatics package or tool, e.g. a standalone application or web service.</td>
+        <td><a property="owl:subClassOf" href="http://edamontology.org/data_0007">data_0007</a></td>
+      </tr>
+      <!-- tr about="glossary:" typeof="owl:Class">
+        <td property="rdfs:label">xxx</td>
+        <td property="obo:IAO_0000115">yyy</td>
+        <td><a property="owl:subClassOf" href=""></a></td>
+      </tr -->
+    </table>
+    <h3>Council terms</h3>
+    <table width="80%">
+      <tr>
+        <td><b>Term</b></td><td><b>Definition</b></td><td><b>Superclass IRI</b></td>
+      </tr>
+      <tr about="glossary:Risk_governance" typeof="owl:Class">
+        <td property="rdfs:label">Risk governance</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Portal" typeof="owl:Class">
+        <td property="rdfs:label">Portal</td>
+        <td property="obo:IAO_0000115">A Resource that provides a point of access to information on the World Wide Web, presenting information from diverse sources in a unified way.	</td>
+        <td><a property="owl:subClassOf" href="http://bioontology.org/ontologies/BiomedicalResourceOntology.owl#Portal"></a></td>
+      </tr>
+    </table>
+    <h3>Modelling terms</h3>
+    <table width="80%">
+      <tr>
+        <td><b>Term</b></td><td><b>Definition</b></td><td><b>Superclass IRI</b></td>
+      </tr>
+      <tr about="glossary:Atomistic_model" typeof="owl:Class">
+        <td property="rdfs:label">Atomistic model</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Computational_model" typeof="owl:Class">
+        <td property="rdfs:label">Computational model</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Continuum_model" typeof="owl:Class">
+        <td property="rdfs:label">Continuum model</td>
+        <td property="obo:IAO_0000115">Continuum theories or models explain variation as involving a gradual quantitative transition without abrupt changes or discontinuities. It can be contrasted with 'categorical' models which propose qualitatively different states.</td>
+        <td><a property="owl:subClassOf" href="http://scai.fraunhofer.de/HuPSON#SCAIVPH_00000644"></a></td>
+      </tr>
+      <tr about="glossary:Electronic_model" typeof="owl:Class">
+        <td property="rdfs:label">Electronic model</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Meta-model" typeof="owl:Class">
+        <td property="rdfs:label">Meta-model</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Model" typeof="owl:Class">
+        <td property="rdfs:label">Model</td>
+        <td property="obo:IAO_0000115">A mathematical model is the use of mathematical language to describe the behaviour of a system. A mathematical model usually describes a system by a set of variables and a set of equations that establish relationships between the variables. The variables represent some properties of the system, for example, measured system outputs often in the form of signals, timing data, counters, event occurrence (yes/no). The actual model is the set of functions that describe the relations between the different variables. [source: WordIQ online dictionary]</td>
+        <td><a property="owl:subClassOf" href="http://purl.org/obo/owl/SBO#SBO_0000004">SBO_0000004</a></td>
+      </tr>
+    </table>
+    <h3>Hazard terms</h3>
+    These terms originate from <a href="https://www.ecetoc.org/sr_19/preface/definitions/">https://www.ecetoc.org/sr_19/preface/definitions/</a>.
+    <table width="80%">
+      <tr>
+        <td><b>Term</b></td><td><b>Definition</b></td><td><b>Superclass IRI</b></td>
+      </tr>
+      <tr about="glossary:Adverse_Outcome" typeof="owl:Class">
+        <td property="rdfs:label">Adverse Outcome</td>
+        <td property="obo:IAO_0000115">A specialised type of key event (KE), measured at a level of organisation that corresponds with an established protection goal and/or is functionally equivalent to an apical endpoint measured as part of an accepted guideline test.</td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Adverse_Outcome_Pathway" typeof="owl:Class">
+        <td property="rdfs:label">Adverse Outcome Pathway</td>
+        <td property="obo:IAO_0000115">A conceptual framework that organises existing knowledge concerning biologically plausible, and empirically supported, links between molecular-level perturbation of a biological system and an adverse outcome at a level of biological organisation of regulatory relevance.</td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Apical_Endpoint" typeof="owl:Class">
+        <td property="rdfs:label">Apical Endpoint</td>
+        <td property="obo:IAO_0000115">Traditional, directly measured, adverse whole-organism outcomes of exposure in in vivo tests.</td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Integrated_Approaches_to_Testing_and_Assessment" typeof="owl:Class">
+        <td property="rdfs:label">Integrated Approaches to Testing and Assessment</td>
+        <td property="obo:IAO_0000115">A structured approach that strategically integrates and weights all relevant data to inform regulatory decisions regarding potential hazard and/or risk and/or the need for further targeted testing and therefore optimising and potentially reducing the number of tests that need to be conducted.</td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Key_Event" typeof="owl:Class">
+        <td property="rdfs:label">Key Event</td>
+        <td property="obo:IAO_0000115">A measurable change in biological state that is essential, but not necessarily sufficient, for the progression from a defined biological perturbation toward a specific adverse outcome.</td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Key_Event_Relationship" typeof="owl:Class">
+        <td property="rdfs:label">Key Event Relationship</td>
+        <td property="obo:IAO_0000115">A scientifically-based relationship between a pair of KEs, identifying one as upstream and the other as downstream.</td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Molecular_Initiating_Event" typeof="owl:Class">
+        <td property="rdfs:label">Molecular Initiating Event</td>
+        <td property="obo:IAO_0000115">A specialised type of KE, defined as the point where a chemical directly interacts with a biomolecule within an organism to create a perturbation that starts the AOP – as such, by definition, it occurs at the molecular level.</td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Mode_Of_Action" typeof="owl:Class">
+        <td property="rdfs:label">Mode Of Action</td>
+        <td property="obo:IAO_0000115">A biologically plausible sequence of key events leading to an observed effect supported by robust experimental observations and mechanistic data. </td>
+        <td></td>
+      </tr>
+      <tr about="glossary:Toxicity_pathway" typeof="owl:Class">
+        <td property="rdfs:label">Toxicity pathway</td>
+        <td property="obo:IAO_0000115">Perturbation of a normal biochemical pathway from the molecular initiating event to the cellular effect.</td>
+        <td></td>
+      </tr>
+    </table>
+    <h3>Exposure terms</h3>
+    <table width="80%">
+      <tr>
+        <td><b>Term</b></td><td><b>Definition</b></td><td><b>Superclass IRI</b></td>
+      </tr>
+      <!-- tr about="glossary:" typeof="owl:Class">
+        <td property="rdfs:label">xxx</td>
+        <td property="obo:IAO_0000115">yyy</td>
+        <td><a property="owl:subClassOf" href=""></a></td>
+      </tr -->
+    </table>
+  </section>
+  
+  <section class='informative'>
+    <h2>Acknowledgments</h2>
+    <p>
+      We thank the reviewers Janeck James Scott-Fordsmand, Monique Groenewold, and Maria Dusinska.
+    </p>
+  </section>
+
+  <section class='informative'>
+    <h2>Funding</h2>
+    <p>
+      This work received funding from the European Union’s Horizon 2020 research and innovation programme via <a href="https://nanorigo.eu/">NanoRIGO</a> Project under grant agreement No <a href="https://cordis.europa.eu/project/id/814530">814530</a>, <a href="https://riskgone.eu/">RiskGONE</a> Project under grant agreement No <a href="https://cordis.europa.eu/project/id/814425">814425</a>, and via <a href="https://www.gov4nano.eu/">Gov4Nano</a> under grant agreement No <a href="https://cordis.europa.eu/project/id/814401">814401</a>.
+    </p>
+  </section>
+  
+  <section class='informative'>
+    <h2>List of abbreviations</h2>
+    <dl>  
+      <dt>FP7</dt><dd>Framework Programme 7 (funding programme of the European Commission, 2007-2013)</dd>  
+      <dt>H2020</dt><dd>Horizon 2020 (funding programme of the European Commission, 2014-2020)</dd>  
+      <dt>ISO</dt><dd>International Organization for Standardization</dd>  
+      <dt>JM</dt><dd>Joint Milestone</dd>  
+      <dt>JRC</dt><dd>Joint Research Center (of the European Commission)</dd>  
+      <dt>OECD</dt><dd>Organisation for Economic Cooperation and Development</dd>  
+      <dt>REACH</dt><dd>Registration, Evaluation and Authorisation of Chemicals</dd>  
+    </dl>
+  </section>
+
+</body>
+
+</html>
