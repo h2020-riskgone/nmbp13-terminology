@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6801182.svg)](https://doi.org/10.5281/zenodo.6801182)
+
 # NMBP-13 Glossary of Key Terms
 
 This repository contains a [machine readable version](glossary/index.html) of the _NMBP-13 Glossary of Key Terms_ developed by the Core Data Group of the three NMBP-13 projects.
